@@ -1,0 +1,114 @@
+.team {
+  padding: 100px 0;
+  @include to1024 {
+    padding: 60px 0;
+  }
+  @include to480 {padding: 30px 0;}
+}
+.team-heading {
+  font-size: 42px;
+  color: #4e525d;
+  line-height: 44px;
+  text-align: center;
+  margin-bottom: 130px;
+  @include to1024 {
+    font-size: 36px;
+    line-height: 40px;
+    margin-bottom: 80px;
+  }
+  @include to768 {
+    font-size: 32px;
+    line-height: 36px;
+    margin-bottom: 60px;
+  }
+  @include to480 {
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 35px;
+  }
+}
+.team-wrap {
+  text-align: center;
+  font-size: 0;
+}
+.team-item {
+  display: inline-block;
+  width: 25%;
+  padding: 0 21px;
+  text-align: center;
+  @include to960 {
+    width: 50%;
+    margin-bottom: 25px;
+  }
+  @include to480 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .preview {
+    position: relative;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-color: #eeeef0;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    margin-bottom: 65px;
+    cursor: pointer;
+    @include to960 {
+      width: 170px;
+      height: 170px;
+      margin-bottom: 45px;
+    }
+    @include to768 {
+      margin-bottom: 30px;
+      width: 140px;
+      height: 140px
+    }
+    &:hover {
+      &:after, &:before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background: #f46d6d;
+        z-index: 2;
+      }
+      &:before {
+        width: 11px;
+        height: 42px;
+      }
+      &:after {
+        width: 42px;
+        height: 11px;
+      }
+    }
+    img {
+      position: absolute;
+      top: 50%;left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  .name {
+    font-size: 22px;
+    line-height: 30px;
+    color: #4e525d;
+    @include to768 {
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+  .position, .description {
+    font-size: 14px;
+    color: #4e525d;
+    line-height: 26px;
+    @include to768 {
+      font-size: 12px;
+      line-height: 20px;
+    }
+  }
+  .position {
+    margin-bottom: 25px;
+    @include to768 {margin-bottom: 15px;}
+  }
+}

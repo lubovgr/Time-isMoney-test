@@ -1,0 +1,92 @@
+.plans {
+  padding: 118px 0 100px;
+  background: #f1f1f1;
+  @include to960 { padding: 80px 0;}
+  .plans-wrap {
+    font-size: 0;
+    margin: 0 -15px;
+    text-align: center;
+  }
+  .plans-item {
+    display: inline-block;
+    width: 33.33%;
+    padding: 0 15px;
+    max-width: 370px;
+    @include to768 {width: 50%; margin-bottom: 25px;}
+    @include to768 {width: 100%;}
+    &.active {
+      .plan-heading {
+        background: #49cbcd;
+      }
+    }
+    .plans-item-inner {
+      border: 1px solid #ecf0f1;
+      background: #fff;
+      border-radius: 2px;
+    }
+    .plan-heading {
+      font-size: 26px;
+      line-height: 27px;
+      color: #fff;
+      background: #485460;
+      text-align: center;
+      padding: 24px 0;
+      transition: background .3s;
+      @include to960 {
+        padding: 12px 0;
+        font-size: 21px;
+        line-height: 24px;
+      }
+    }
+    .plan-price {
+      background: #f8f9fb;
+      font-size: 20px;
+      color: #485460;
+      line-height: 22px;
+      padding: 23px 0;
+      height: 69px;
+      border-bottom: 1px solid #ecf0f1;
+      @include to960 {
+        padding: 17px 0;
+        font-size: 16px;
+        line-height: 20px;
+        height: 52px;
+      }
+    }
+    .plan-info li {
+      padding: 14px 0;
+      border-bottom: 1px solid #ecf0f1;
+      @include to960 {padding: 10px 0;}
+      span {
+        font-size: 14px;
+        color: #8c9299;
+        line-height: 17px;
+        @include to960 {font-size: 12px;}
+      }
+    }
+    .wrap-buy-now {
+      padding: 29px 0;
+      background: #f8f9fb;
+      @include to960 {padding: 20px 0;}
+      .buy-now {
+        display: block;
+        padding: 10px 0;
+        width: 170px;
+        margin: 0 auto;
+        font-size: 17px;
+        color: #fff;
+        background-color: #788492;
+        line-height: 20px;
+        border-radius: 2px;
+        @include to960 {
+          width: 140px;
+          font-size: 15px;
+        }
+        &:hover {
+          background-color: #49cbcd;
+          transition: background .3s;
+        }
+      }
+    }
+  }
+}

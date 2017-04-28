@@ -1,0 +1,71 @@
+.contacts-wrap {
+  padding: 100px 0;
+  background: url(../img/temp/contacts.jpg) no-repeat top center;
+}
+.contacts-heading {
+  font-size: 42px;
+  color: #fff;
+  text-align: center;
+  line-height: 44px;
+  margin-bottom: 100px;
+}
+.contacts-info {
+  float: left;
+  text-align: left;
+  width: 440px;
+  .info-head {
+    font-size: 24px;
+    line-height: 40px;
+    color: #fff;
+  }
+  p {
+    font-size: 14px;
+    color: #999999;
+    line-height: 20px;
+    margin-bottom: 30px;
+  }
+  .social {
+    overflow: hidden;
+    a {
+      float: left;
+      margin-right: 15px;
+      margin-bottom: 20px;
+      width: 42px;height: 42px;
+    }
+    .facebook {background: url(../img/temp/facebook.png) no-repeat 0 0;}
+    .twitter {background: url(../img/temp/twitter.png) no-repeat 0 0;}
+    .google {background: url(../img/temp/google.png) no-repeat 0 0;}
+  }
+  span {
+    display: block;
+    font-size: 14px;
+    color: #bface2;
+    margin-bottom: 10px;
+  }
+}
+.contacts-form {
+  float: right;
+  width: 48%;
+  .finp, .ftext {
+    border: none;
+    border-radius: 3px;
+    display: inline-block;
+    width: 100%;
+    height: 44px;
+    line-height: 44px;
+    color: #c1c1c1;
+    font-size: 16px;
+    text-align: left;
+    overflow: hidden;
+    resize: none;
+    margin-bottom: 30px;
+  }
+  .finp {
+    width: 46%;
+    float: left;
+    margin-right: 30px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

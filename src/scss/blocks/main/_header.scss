@@ -1,0 +1,10 @@
+.header {
+  .logo {
+    width: 120px;
+    padding: 31px 0;
+    @include to768 {
+      width: 100px;
+      padding: 14px;
+    }
+  }
+}

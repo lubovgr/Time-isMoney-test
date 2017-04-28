@@ -1,0 +1,131 @@
+.main-slider-container {
+  background: url(../img/temp/banner.jpg) no-repeat center;
+  height: 566px;
+  background-size: cover;
+  @include to768 {
+    height: 400px;
+  }
+  @include to640 {
+    height: 320px;
+  }
+}
+.main-slider-slide {
+  display: inline-block;
+  padding: 135px 0 145px;
+  text-align: center;
+  @include to768 {
+    padding: 100px 0 80px;
+  }
+  @include to640 {
+    padding: 80px 0 50px;
+  }
+  .main-heading {
+    font-size: 63px;
+    color: #fff;
+    line-height: 66px;
+    margin-bottom: 35px;
+    @include to768 {
+      font-size: 40px;
+      line-height: 48px;
+      margin-bottom: 20px;
+    }
+    @include to640 {
+      font-size: 25px;
+      line-height: 36px;
+      margin-bottom: 15px;
+    }
+  }
+  .slide-text {
+    width: 400px;
+    font-size: 23px;
+    color: #fff;
+    line-height: 36px;
+    margin: 0 auto 45px;
+    @include to768 {
+      width: 320px;
+      font-size: 18px;
+      line-height: 30px;
+      margin-bottom: 20px;
+    }
+    @include to640 {
+      width: 240px;
+      font-size: 15px;
+      line-height: 24px;
+      margin-bottom: 20px;
+    }
+  }
+  .learn-more-btn {
+    display: inline-block;
+    height: 70px;
+    width: 230px;
+    background: transparent;
+    border-radius: 5px;
+    border: 3px solid #fff;
+    line-height: 26px;
+    padding: 19px 36px;
+    color: #fff;
+    font-size: 23px;
+    text-align: center;
+    transition: background .4s ease-in-out, color 0.4s ease-in-out;
+    cursor: pointer;
+    @include to768 {
+      width: 180px;
+      height: 46px;
+      font-size: 16px;
+      line-height: 20px;
+      padding: 10px 0;
+    }
+    @include to640 {
+      width: 150px;
+      height: 40px;
+      font-size: 14px;
+      line-height: 14px;
+      padding: 10px 0;
+    }
+    &:hover {
+      background: #fff;
+      color: #49cbcd;
+    }
+  }
+}
+.swiper-button-next, .swiper-button-prev {
+  background: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  opacity: 1;
+  @include to768 {
+    width: 30px;
+    height: 30px;
+  }
+  &:hover {
+    background-color: #f8f9fb;
+  }
+  &:after {
+    content: '';
+    width: 19px;
+    height: 19px;
+    position: absolute;
+    top: 50%;left: 50%;
+    border-style: solid;
+    border-color: #49cbcd;
+    @include to768 {
+      width: 12px;
+      height: 12px;
+    }
+  }
+}
+.swiper-button-next {
+  &:after {
+    border-width: 2px 2px 0 0;
+    transform: translate(-70%, -50%) rotate(45deg);
+  }
+}
+.swiper-button-prev {
+  &:after {
+    border-width: 0 0 2px 2px;
+    transform: translate(-30%, -50%) rotate(45deg);
+  }
+}
+.swiper-button-next.swiper-button-disabled, 
+.swiper-button-prev.swiper-button-disabled {opacity: 1;}

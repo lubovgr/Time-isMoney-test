@@ -1,0 +1,23 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    block page
+      - var page = "index";
+    block title
+    link(href='css/style.css', rel='stylesheet')
+  body
+    .wrapper
+      //- include ../partials/svg
+      include ../partials/main/header
+      .content
+        include ../partials/main-slider 
+        block content  
+            
+      include ../partials/main/footer
+      
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
+    script(src='js/swiper.min.js')
+    script(src='js/script.js')
